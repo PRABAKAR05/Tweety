@@ -1,0 +1,185 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #1da1f2;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #117cb8;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.post-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* New Post Section */
+.new-post {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.new-post h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.new-post textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.new-post button {
+    padding: 10px 15px;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-post button:hover {
+    background-color: #117cb8;
+}
+
+/* Post Feed */
+.post-feed {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.post-feed h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#post-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#post-list li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#post-list li p {
+    font-size: 16px;
+    color: #333;
+    margin-right: 80px; /* Space for buttons */
+}
+
+/* Edit and Delete Buttons */
+.edit-button,
+.delete-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+.edit-button {
+    background-color: #ffcf40;
+    color: #333;
+    margin-right: 50px;
+    
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    margin-right: 100px;
+}
+
+.edit-button:hover {
+    background-color: #e6b000;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}

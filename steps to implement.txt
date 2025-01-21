@@ -1,0 +1,7 @@
+1.install xampp and import the sql file
+2.install postman
+3.open a folder in vscode
+4.paste the command cd tweety-backend                    
+5.node app.js 
+6.open a file in login.html
+7.open with live server

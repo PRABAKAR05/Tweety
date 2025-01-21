@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Tweety</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation (same as the layout you created) -->
+        <nav class="sidebar">
+            <h2>Tweety</h2>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="login.html">LogOut</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content for Profile -->
+        <div class="main-content">
+            <header>
+                <h1>Profile</h1>
+            </header>
+
+            <section class="content profile-section">
+                <div class="profile-header">
+                    <div class="profile-pic-container">
+                        <img id="profile-pic" src="/images/profile.jpg" alt="Profile Picture">
+                        <input type="file" id="profile-pic-upload" accept="image/*">
+                    </div>
+                    <div class="profile-info">
+                        <h2 id="username">Username</h2>
+                        <p id="bio"></p>
+                        
+                        <div class="follow-info">
+                            <span id="followers-count">Followers: 0</span>
+                            <span id="following-count">Following: 0</span>
+                        </div>
+                    </div>
+                    <!-- Add Edit Profile button -->
+                    <button id="edit-profile-btn">Edit Profile</button>
+                </div>
+
+                <!-- Search Friends Section -->
+                <div class="search-friends">
+                    <input type="text" id="friend-search" placeholder="Search for friends...">
+                    <ul id="friends-list">
+                        <!-- Friends will be dynamically added here -->
+                    </ul>
+                </div>
+
+                <!-- Hidden Edit Profile Section -->
+                <div class="profile-edit-section" id="edit-profile-section" style="display: none;">
+                    <h3>Edit Profile</h3>
+                    <form id="edit-profile-form">
+                        
+
+                        <label for="bio-input">Bio</label>
+                        <textarea id="bio-input" placeholder="Enter your bio"></textarea>
+
+                        
+
+                        <button type="submit">Save Changes</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

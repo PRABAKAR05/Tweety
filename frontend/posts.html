@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts - Tweety</title>
+    <link rel="stylesheet" href="post.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <h2>Tweety</h2>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="login.html">LogOut</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content for Posts -->
+        <div class="main-content">
+            <header>
+                <h1>Posts</h1>
+            </header>
+
+            <section class="content post-section">
+                <!-- New Post Section -->
+                <div class="new-post">
+                    <h3>Create a New Post</h3>
+                    <form id="new-post-form">
+                        <textarea id="post-content" placeholder="What's on your mind?" rows="4"></textarea>
+                        <button type="submit">Post</button>
+                    </form>
+                </div>
+
+                <!-- Post Feed -->
+                <div class="post-feed">
+                    <h3>Your Feed</h3>
+                    <ul id="post-list">
+                        <!-- Posts will be dynamically added here -->
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="posts.js"></script>
+</body>
+</html>

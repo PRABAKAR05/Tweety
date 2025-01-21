@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Tweety</title>
+    <link rel="stylesheet" href="message.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <h2>Tweety</h2>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="login.html">LogOut</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Main Content for Messages -->
+        <div class="main-content">
+            <header>
+                <h1>Messages</h1>
+            </header>
+    
+            <section class="content message-section">
+                <!-- Search Input for Friends -->
+                <div class="search-friends">
+                    <input type="text" id="friend-search" placeholder="Search friends...">
+                </div>
+    
+                <!-- Conversation List -->
+                <div class="conversation-list">
+                    <h3>Following</h3>
+                    <ul id="following-list">
+                        <!-- List of following users will be dynamically added here -->
+                    </ul>
+                </div>
+    
+                <!-- Chat Window -->
+                <div class="chat-window">
+                    <h3 id="chat-user">Select a Conversation</h3>
+                    <div id="chat-box" class="chat-box">
+                        <!-- Chat messages will appear here -->
+                    </div>
+    
+                    <!-- Message Input Form -->
+                    <form id="message-form" class="message-form">
+                        <input type="text" id="message-input" placeholder="Type a message...">
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="messages.js"></script>
+    
+</body>
+</html>

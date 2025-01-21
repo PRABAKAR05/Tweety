@@ -1,0 +1,56 @@
+/* General Styles for Signup Page */
+.signup-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 0 auto; /* Center the container */
+    text-align: center;
+}
+
+.signup-container h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #117cb8;
+}
+
+.login-link {
+    
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #1da1f2;
+    text-decoration: none;
+}
